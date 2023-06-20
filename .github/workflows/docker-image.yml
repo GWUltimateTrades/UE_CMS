@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build ./gwult_CMS --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file ./gwult_CMS/Dockerfile --tag gwult_strapi:$(date +%s)
