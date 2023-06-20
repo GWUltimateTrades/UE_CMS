@@ -5,7 +5,7 @@ ARG NODE_ENV=development
 ENV NODE_ENV=${NODE_ENV}
 
 WORKDIR /opt/
-COPY package.json package-lock.json ./gwult_CMS
+COPY package.json package-lock.json ./gwult_CMS/
 RUN npm config set network-timeout 600000 -g && npm install
 
 WORKDIR /opt/app
